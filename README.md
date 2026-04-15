@@ -1,6 +1,6 @@
 # Claude Toolkit — Backup de Skills
 
-Backup privado de las 94 skills instaladas en Claude Code (`~/.agents/skills/`).  
+Backup privado de las 95 skills instaladas en Claude Code (`~/.agents/skills/`).  
 Invocar cualquier skill con `/nombre-skill` dentro de Claude Code.
 
 ---
@@ -137,6 +137,14 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 | `content-strategy` | Estrategia de contenido: pilares, calendario, distribución, métricas |
 | `sales-enablement` | Materiales de ventas: decks, one-pagers, scripts, objeciones |
 | `revops` | Revenue Operations: procesos, automatización, alineación ventas-marketing |
+
+---
+
+### Universidad
+
+| Skill | Qué hace |
+|-------|----------|
+| `university-docs` | Resolver y entregar actividades de Asturias como .docx en APA 7: portada, desarrollo con cálculos, aplicación práctica y referencias. Incluye estilo visual (Times New Roman, tablas sobrias, sin recuadros, texto humanizado), proceso de estandarización para estadística, checklist de calidad y plantilla de portada |
 
 ---
 
