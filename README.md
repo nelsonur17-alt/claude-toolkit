@@ -1,6 +1,6 @@
 # Claude Toolkit — Backup de Skills
 
-Backup privado de las 93 skills instaladas en Claude Code (`~/.agents/skills/`).  
+Backup privado de las 94 skills instaladas en Claude Code (`~/.agents/skills/`).  
 Invocar cualquier skill con `/nombre-skill` dentro de Claude Code.
 
 ---
@@ -60,6 +60,7 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 | `email-sequence` | Secuencias de email: onboarding, nurture, recuperación, lanzamiento |
 | `brainstorming` | Sesiones de ideación estructuradas con companion visual |
 | `clarify` | Clarificar ideas confusas o mensajes ambiguos antes de escribir |
+| `humanizer` | Eliminar señales de texto generado por IA: 29 patrones detectados (inflación de significado, vocabulario IA, em dash en exceso, etc.). Incluye calibración de voz personal con muestras de escritura propia |
 | `full-output-enforcement` | Forzar output completo sin truncamientos — útil para documentos largos |
 
 ---
