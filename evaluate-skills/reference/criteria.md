@@ -96,7 +96,31 @@ Si el recurso asume Ruby on Rails, .NET, o tecnologías incompatibles, su valor 
 
 ---
 
-## 8. Instalación y mantenimiento
+## 8. Seguridad — verificar ANTES de cualquier otra evaluación
+
+**Esta verificación es prioritaria. Si falla, detener el análisis y no recomendar instalación.**
+
+Señales de alerta que indican malware o intención maliciosa:
+
+- **Archivos ejecutables o ZIPs pre-empaquetados** en el repo — los proyectos legítimos no distribuyen binarios, solo código fuente
+- **Promesas imposibles técnicamente** — "Claude gratis e ilimitado", "sin API key", "bypass de límites". Claude no puede correr localmente ni puede usarse sin autenticación legítima
+- **Arquitectura de proxy no documentada** — cualquier cosa que se ponga entre el usuario y la API de Anthropic sin explicación clara puede interceptar credenciales y conversaciones
+- **Cuenta del autor sin historial** — perfil nuevo, sin contribuciones previas, sin organización verificable
+- **Integración con canales de exfiltración** — Telegram bots, webhooks a dominios desconocidos, llamadas a IPs hardcodeadas
+- **Código ofuscado** — variables con nombres sin sentido, strings encodeados en base64 sin justificación
+- **El antivirus lo bloqueó** — señal definitiva. No ignorar bajo ninguna circunstancia
+
+**Si el antivirus bloqueó el recurso: recomendación automática de NO instalar, sin importar qué promete.**
+
+**Cómo verificar:**
+1. Revisar todos los archivos del repo en GitHub (sin clonar ni descargar)
+2. Buscar el nombre del repo + "malware" o "virus" en Google
+3. Revisar el perfil del autor: ¿cuándo fue creado? ¿qué otros repos tiene?
+4. Si hay un ZIP o ejecutable: **no descargar bajo ninguna circunstancia**
+
+---
+
+## 9. Instalación y mantenimiento
 
 **Pregunta:** ¿Qué implica mantener esto instalado?
 

@@ -8,6 +8,22 @@ Cada vez que el usuario comparta links de GitHub, nombres de skills, o cualquier
 
 ## Proceso
 
+### Paso 0: Verificación de seguridad — SIEMPRE PRIMERO
+
+Antes de evaluar utilidad, redundancia o cualquier otro criterio, verificar que el recurso es seguro:
+
+1. Revisar el perfil del autor en GitHub — ¿cuándo fue creado? ¿tiene historial legítimo?
+2. Revisar los archivos del repo — ¿hay ZIPs, ejecutables, o binarios pre-empaquetados?
+3. Buscar el repo + "malware" en Google
+4. ¿Promete algo técnicamente imposible? (Claude gratis, sin API key, bypass de límites)
+5. ¿Hay integración con Telegram, webhooks a dominios desconocidos, o código ofuscado?
+
+**Si el antivirus del usuario ya lo bloqueó → recomendación inmediata de NO instalar. Fin del análisis.**
+
+Si pasa la verificación de seguridad, continuar con el resto de criterios.
+
+---
+
 ### Paso 1: Identificar los candidatos
 
 Para cada recurso compartido por el usuario:
