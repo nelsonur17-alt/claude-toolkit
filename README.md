@@ -179,6 +179,26 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 
 ---
 
+## Claude Code Agents (`~/.claude/agents/`)
+
+Subagentes especializados que Claude activa en flujos agénticos. Se invocan con: *"Usa el agente X para..."*
+
+| Agente | Qué hace | Cuándo usarlo |
+|--------|----------|---------------|
+| `engineering-mobile-app-builder` | React Native, Swift, Flutter. Optimización de batería, offline-first, push notifications, App Store | Features de Faro — delegar implementación mobile |
+| `engineering-backend-architect` | Diseño de APIs, esquemas de BD, microservicios, seguridad, caching. Respuestas <200ms | Arquitectura de Faro backend o escalado de Control Center |
+| `engineering-code-reviewer` | Revisión en 5 dimensiones: corrección, seguridad, mantenibilidad, performance, testing. Severidades 🔴🟡💭 | Antes de hacer commit o deploy en cualquier proyecto |
+| `testing-reality-checker` | Validación final antes de producción. Busca activamente qué está mal, requiere evidencia visual, por defecto dice "NEEDS WORK" | Última revisión antes de lanzar cualquier feature a producción |
+
+**Recuperar en PC nuevo:**
+```bash
+mkdir -p ~/.claude/agents
+# Clonar y copiar manualmente los 4 archivos desde:
+# https://github.com/msitarzewski/agency-agents
+```
+
+---
+
 ## MCP Servers (`~/.claude/claude.json`)
 
 | MCP | Qué hace |
