@@ -44,6 +44,26 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 
 ---
 
+### Video y animación (HyperFrames)
+
+| Skill | Qué hace |
+|-------|----------|
+| `hyperframes` | Convertir HTML/CSS animado en video MP4 con FFmpeg. Sistema principal — define house style, paletas, motion principles |
+| `hyperframes-cli` | Interfaz CLI de HyperFrames: comandos para renderizar, previsualizar y exportar frames |
+| `hyperframes-media` | Integración de media (imágenes, video, audio) dentro de frames de HyperFrames |
+| `hyperframes-registry` | Gestión del registry de componentes y bloques reutilizables de HyperFrames |
+| `website-to-hyperframes` | Flujo en 7 pasos para convertir un sitio web existente en video animado |
+| `remotion-to-hyperframes` | Migrar animaciones de Remotion (React) a HyperFrames (HTML puro) |
+| `animejs` | Librería Anime.js: animaciones JS declarativas, timelines, morphing SVG |
+| `css-animations` | Animaciones CSS puras: keyframes, transitions, transforms, performance |
+| `gsap` | GSAP (GreenSock): animaciones profesionales, ScrollTrigger, timelines complejos |
+| `lottie` | Lottie: reproducir animaciones After Effects exportadas como JSON en web/mobile |
+| `tailwind` | Tailwind CSS: utility-first, configuración, componentes, dark mode |
+| `three` | Three.js: escenas 3D en el browser, geometrías, materiales, luces, cámara |
+| `waapi` | Web Animations API: animaciones nativas del browser sin librerías externas |
+
+---
+
 ### Escritura y contenido
 
 | Skill | Qué hace |
