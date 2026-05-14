@@ -187,6 +187,14 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 
 ---
 
+### Finanzas e inversión
+
+| Skill | Qué hace |
+|-------|----------|
+| `analizar-activo` | Análisis fundamental sistemático de acciones, ETFs y fondos. Framework de 7 secciones adaptado al tipo de activo (acción / ETF un solo activo / ETF canasta / fondo activo). Incluye: valuación (PEG, Forward P/E), salud financiera por sector, consensus de analistas, resumen en lenguaje simple, preguntas anti-FOMO y recomendación con horizonte de tiempo claro. Nunca inventa datos — cada métrica lleva fuente y timestamp. |
+
+---
+
 ### Meta-skills (gestión de Claude)
 
 | Skill | Qué hace |
