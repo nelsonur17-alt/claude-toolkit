@@ -233,7 +233,9 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 
 ## Claude Code Agents (`~/.claude/agents/`)
 
-Subagentes especializados que Claude activa en flujos agénticos. Se invocan con: *"Usa el agente X para..."*
+Subagentes especializados que Claude activa autónomamente (descripciones con `PROACTIVELY` / `MUST BE USED`) o que puedes invocar con: *"Usa el agente X para..."*
+
+### Agentes generalistas (agency-agents)
 
 | Agente | Qué hace | Cuándo usarlo |
 |--------|----------|---------------|
@@ -242,11 +244,26 @@ Subagentes especializados que Claude activa en flujos agénticos. Se invocan con
 | `engineering-code-reviewer` | Revisión en 5 dimensiones: corrección, seguridad, mantenibilidad, performance, testing. Severidades 🔴🟡💭 | Antes de hacer commit o deploy en cualquier proyecto |
 | `testing-reality-checker` | Validación final antes de producción. Busca activamente qué está mal, requiere evidencia visual, por defecto dice "NEEDS WORK" | Última revisión antes de lanzar cualquier feature a producción |
 
+### Agentes especializados (ECC)
+
+| Agente | Activación | Qué hace |
+|--------|-----------|----------|
+| `build-error-resolver` | Automática al fallar un build | Arregla errores de build y TypeScript con diffs mínimos. No toca arquitectura. |
+| `react-build-resolver` | Automática en fallo de build React | Hydration mismatches, server/client boundaries, Next.js/Vite/Turbopack |
+| `database-reviewer` | Automática al escribir SQL | Queries, schemas, migraciones, RLS — con prácticas específicas de Supabase |
+| `typescript-reviewer` | Automática en proyectos TS | Type safety, async correctness, patrones idiomáticos. Para Soul, Catálogo DIVA, Faro |
+| `python-reviewer` | Automática en proyectos Python | PEP 8, type hints, seguridad y performance. Para Control Center Flask |
+| `security-reviewer` | Automática al manejar inputs de usuario | OWASP Top 10, injection, SSRF, secrets expuestos |
+| `silent-failure-hunter` | Manual | Busca errores silenciosos: catch vacíos, fallbacks incorrectos, errores que no propagan |
+| `performance-optimizer` | Manual | Bundle size, memory leaks, render optimization, mejoras algorítmicas |
+| `refactor-cleaner` | Manual | Elimina dead code con knip/depcheck. Para limpiezas de proyecto |
+
 **Recuperar en PC nuevo:**
 ```bash
 mkdir -p ~/.claude/agents
-# Clonar y copiar manualmente los 4 archivos desde:
-# https://github.com/msitarzewski/agency-agents
+# Agentes generalistas: https://github.com/msitarzewski/agency-agents
+# Agentes ECC: copiar desde agents/ en este mismo repo
+cp agents/*.md ~/.claude/agents/
 ```
 
 ---
