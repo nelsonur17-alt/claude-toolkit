@@ -82,6 +82,9 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 | `clarify` | Clarificar ideas confusas o mensajes ambiguos antes de escribir |
 | `humanizer` | Eliminar señales de texto generado por IA: 29 patrones detectados (inflación de significado, vocabulario IA, em dash en exceso, etc.). Incluye calibración de voz personal con muestras de escritura propia |
 | `full-output-enforcement` | Forzar output completo sin truncamientos — útil para documentos largos |
+| `article-writing` | Artículos largos estructurados: investigación, estructura, argumentación, CTAs [ECC] |
+| `brand-voice` | Definir y mantener voz de marca consistente en todos los canales [ECC] |
+| `market-research` | Research de mercado estructurado: TAM, competidores, tendencias, síntesis [ECC] |
 
 ---
 
@@ -174,7 +177,9 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 |-------|----------|
 | `systematic-debugging` | Diagnóstico de bugs con metodología: root cause tracing, hipótesis, verificación |
 | `test-driven-development` | TDD: escribir tests primero, red-green-refactor, anti-patterns |
+| `tdd-workflow` | ⭐ TDD con ciclo gateado RED→GREEN→REFACTOR con evidencia obligatoria por paso. Acepta plan.md como input. Más robusto que test-driven-development — usar este en proyectos reales [ECC] |
 | `verification-before-completion` | Verificar que el trabajo realmente funciona antes de declararlo terminado |
+| `verification-loop` | ⭐ Verificación en 6 fases: build, type check, lint, tests con coverage, security grep y diff review. Produce reporte PASS/FAIL. Más completo que verification-before-completion [ECC] |
 | `subagent-driven-development` | Arquitectura multi-agente: orquestar subagentes para tareas paralelas |
 | `dispatching-parallel-agents` | Despachar múltiples agentes en paralelo para maximizar velocidad |
 | `executing-plans` | Ejecutar planes de implementación paso a paso con trazabilidad |
@@ -184,6 +189,25 @@ git clone https://github.com/nelsonur17-alt/claude-toolkit.git ~/.agents/skills
 | `requesting-code-review` | Preparar y solicitar code reviews efectivos |
 | `receiving-code-review` | Recibir y procesar feedback de code review |
 | `using-git-worktrees` | Git worktrees para trabajar en múltiples ramas simultáneamente |
+| `security-review` | Revisión de seguridad de código: OWASP top 10, injection, auth, secrets, dependencias [ECC] |
+| `e2e-testing` | Tests end-to-end: flujos completos de usuario, Playwright/Cypress, CI integration [ECC] |
+| `api-design` | Diseño de APIs REST: contratos, versionado, error handling, documentación OpenAPI [ECC] |
+| `database-migrations` | Migraciones de base de datos: estrategia, rollback, zero-downtime, Supabase/Postgres [ECC] |
+| `git-workflow` | Workflow de Git: branching, commits semánticos, PRs, squash, rebase [ECC] |
+| `context-budget` | Gestión del presupuesto de contexto en sesiones largas: qué compactar, cuándo limpiar [ECC] |
+| `continuous-learning` | Extrae patrones de sesiones completadas y los guarda como instintos reutilizables [ECC] |
+| `deep-research` | Research estructurado con múltiples fuentes, síntesis y verificación cruzada [ECC] |
+| `prompt-optimizer` | Optimizar prompts para Claude: claridad, eficiencia de tokens, system prompts [ECC] |
+
+#### Por stack (ECC)
+
+| Skill | Qué hace |
+|-------|----------|
+| `react-native-patterns` | Patrones React Native + Expo: navegación, estado, performance, offline-first [ECC] |
+| `python-patterns` | Patrones Python: estructura de proyectos, typing, dataclasses, async [ECC] |
+| `python-testing` | Testing en Python: pytest, fixtures, mocks, coverage, Flask testing [ECC] |
+| `postgres-patterns` | Patrones PostgreSQL: queries avanzadas, índices, RLS, Supabase-specific [ECC] |
+| `nextjs-turbopack` | Patrones Next.js 15 con Turbopack: App Router, Server Components, optimización [ECC] |
 
 ---
 
